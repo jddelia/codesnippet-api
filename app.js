@@ -24,6 +24,7 @@ app.use(cors());
 
 // Routes
 app.use('/snippets', require('./routes/snippets'));
+app.use('/subscribers', require('./routes/subsrcibers'));
 
 const PORT = process.env.PORT || 5000;
 

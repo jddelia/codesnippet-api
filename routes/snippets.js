@@ -16,7 +16,7 @@ router.get('/all', (req, res) => {
     });
 })
 
-// /snippets/snippet:id GET snippet by id
+// /snippets/snippet/:id GET snippet by id
 router.get('/snippet/:id', (req, res) => {
   Snippet.find({ _id: req.params.id })
     .then((snippet) => {
